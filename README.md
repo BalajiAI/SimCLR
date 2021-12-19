@@ -1,6 +1,6 @@
 # SimCLR
 
-Transfer learning is a defacto method for solving Computer Vision tasks. But, Pre-training requires a large labeled dataset. However, labeled datasets are very expensive. Self-Supervised Learning is an approach for learning reprsentations from unlabeled dataset (without human supervision). Self-Supervised Learning approaches have been widely adopted as a popular method for Pre-training NLP models. Recently, those methods have shown promising results on Computer Vision tasks.
+Transfer learning is a defacto method for solving Computer Vision tasks. But, Pre-training requires a large labeled dataset. However, labeled datasets are very expensive. Self-Supervised Learning is an approach for learning reprsentations from unlabeled dataset (without human supervision). Self-Supervised Learning approaches have been widely adopted as a popular method for Pre-training NLP models. Recently, those methods have shown promising results for pre-training vision models.
 
 SimCLR is a simple framework for learning visual reprsentations without human supervision via Contrastive Learning. SimCLR makes use of an idea that different views of the same image should be close together in the Latent Space and different views of the different image should be far apart.
 
