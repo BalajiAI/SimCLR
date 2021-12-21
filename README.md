@@ -3,7 +3,7 @@
 Transfer learning is a common practice among AI practitioners for solving Computer Vision problems such as Classification, Object Detection, etc. But, Pre-training requires a large labeled dataset. However, labeled datasets are very expensive. Self-Supervised Learning is an approach for learning reprsentations from unlabeled dataset (without human supervision). Self-Supervised Learning approaches have been widely adopted as a popular method for Pre-training NLP models. Recently, those methods have shown promising results for pre-training vision models.
 
 SimCLR is a simple framework for learning visual reprsentations without human supervision via Contrastive Learning. SimCLR makes use of an idea that different views of the same image should be close together in the Latent space and different views of the different image should be far apart. So, we take two different views of all the images in a batch by applying data augmentation techniques like cropping, Gaussian noise, blurring, etc., then we pass those images to our network to obtain a 1-d feature vector. Then we train our network, So that feature vector of two different views of the same image should be similar, while all the other feature vectors of images in a batch should be as different as possible. By doing so, the model has to learn to recognize the content of the image that remains unchanged under the data augmentations, such as objects which we usually care about in supervised tasks.
-Then, we can use that learned reprsentations of the network for out Fine-tuning tasks. 
+Then, we can use that learned reprsentations of the network for our Fine-tuning tasks. 
 
 
 <div align="center">
